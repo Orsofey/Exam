@@ -1,13 +1,10 @@
-def Del(n, m):
-    return n % m == 0
 
-true_A = []
-for A in range(1, 1000):
-    for x in range(1, 1000):
-        if ((x & 76 != 0) <= ((x & 38 == 0) <= (x & A != 0))) == False:
-            break
-    else:
-        true_A.append(A)
+Q = list(range(12, 92))
+P = list(range(10, 52))
+A = []
 
-print('минимальный А =', min(true_A))
-print('максимальный А =', max(true_A))
+for x in range(1, 1000):
+    if ( (x in A) or ((not(x in P)) <= (not(x in Q))) ) == False:
+        A.append(x)
+
+print(max(A)-min(A))
