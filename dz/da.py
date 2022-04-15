@@ -1,10 +1,7 @@
-
-Q = list(range(12, 92))
-P = list(range(10, 52))
-A = []
-
-for x in range(1, 1000):
-    if ( (x in A) or ((not(x in P)) <= (not(x in Q))) ) == False:
-        A.append(x)
-
-print(max(A)-min(A))
+print('x y z w')
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            for w in range(2):
+                if ((x and (not(y)) or (y==z) or (not(w)))) == False:
+                    print(x, y, z, w)
